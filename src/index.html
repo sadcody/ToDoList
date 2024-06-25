@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div><h1>ToDoList</h1></div>
+    <div class="todoWindow">
+        <div class="menuSide">
+            <h1>Menu</h1>
+            <div class="Tasks">
+                 <div id="taskMenu" class="tasks buttons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.9 20.11 3 19 3M19 19H5V9H19V19M19 7H5V5H19V7Z" /></svg>
+                    <button>Tasks</button> 
+                </div>
+                
+             
+               
+            </div>
+       
+       
+        </div>
+        <div class="centralTaskSide">
+            <button id="addTask">Add Task</button>
+            <dialog id="myDialog">
+                    <div class="dialogDiv">
+                        <input id="taskName" type="text" placeholder="Task name">
+                        <input id="description" type="text" placeholder="Add description">
+                        <select name="When" class="selectWhen">
+                        <option value="today">Today</option>
+                          <option value="Tommorrow">Tommorrow</option>
+                          <option value="thisWeekend">This Weekend</option>
+                          <option value="thisMonth">This Month</option>
+                          </select>
+                          <select id="priority" name="priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                            </select>
+                        
+                            
+                        
+                            <button id="closeDialog">Add</button>
+                        
+                    </div>
+                   
+                    </dialog>
+                        <div class="taskList"></div>
+        
+        </div>
+    </div>
+</body>
+</html>
